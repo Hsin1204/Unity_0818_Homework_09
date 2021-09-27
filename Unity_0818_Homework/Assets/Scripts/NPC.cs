@@ -8,71 +8,54 @@ public class NPC : MonoBehaviour
     ///<summary>
     ///NPC_對話方法
     ///</summary>
-    private void conversation()
+    ///<para name = "dialogue">NPC 對話內容</para>
+    private void conversation(string c_content)
     {
-        ///<summary>
-        ///對話內容
-        ///</summary>
-        string c_content = "";
+       
+       
     }
 
     ///<summary>
     ///是否開啟商店
     ///</summary>
-    public bool into_store()
+    public bool into_store(bool isInto)
     {
-        ///<summary>
-        ///是否進入商店
-        ///</summary>
-        bool isInto = true;
-        return isInto;
+        return true;
     }
 
     ///<summary>
     ///道具價格
     ///</summary>
-    public int item_price()
+    ///<para name ="i_price">道具價格/para>
+    public int item_price(int i_price = 100)
     {
-        ///<summary>
-        ///道具價格
-        ///</summary>
-        int i_price = 100;
+        
         return 0;
     }
 
     ///<summary>
     ///取得任務
     ///</summary>
-    public void get_mission()
+    ///<para name ="m_num">任務編號/para>
+    public void get_mission(int m_num)
     {
-        ///<summary>
-        ///任務編號
-        ///</summary>
-        int m_num;
     }
 
     ///<summary>
     ///更新任務
     ///</summary>
-    private int mission_refresh()
+    ///<para name ="m_item_amount">任務道具數量/para>
+    private int mission_refresh(int m_item_amount)
     {
-        ///<summary>
-        ///設定任務道具數量為1
-        ///</summary>
-        int m_item_amount = 1;
         return 0;
     }
 
     ///<summary>
     ///任務完成
     ///</summary>
-    private bool mission_complete()
+    ///<para name ="mc_num">任務編號/para>
+    private bool mission_complete(int mc_num)
     {
-        ///<summary>
-        ///任務編號
-        ///</summary>
-        int mc_num;
-
         return false;
     }
 
